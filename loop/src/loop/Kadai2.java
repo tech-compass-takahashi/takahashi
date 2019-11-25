@@ -11,7 +11,7 @@ public class Kadai2 {
 		int num=new java.util.Scanner(System.in).nextInt();
         for(int num2=1;num2<=num;num2++){
         	sum+=num2;
-        //計算式と1以外の数字の前に+を表示
+             //計算式と1以外の数字の前に+を表示
         	if(num2!=1) {
         		System.out.print("+");
         	}

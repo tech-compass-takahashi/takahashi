@@ -3,9 +3,13 @@ package loop;
 public class Kadai5 {
 
 	public static void main(String[] args) {
-		// 九九の表を作成し、表示・・・・。ムリーーーーーーーーーッ
-
+		// 九九表を作成
+		for(int num=1;num<=9;num++) {
+			for(int num2=1;num2<=9;num2++) {
+				System.out.printf("%2d",num*num2);
+			}
+			System.out.println();
+		}
 	}
 
 }
-       //作成のイメージもわからなければ説明の意味がわからない
