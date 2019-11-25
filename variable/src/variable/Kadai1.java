@@ -9,15 +9,15 @@ public class Kadai1 {
 		int number2=9;
 		long number3=2147483648l;
 		String text2="才";
-		
+
         System.out.println(number);
         System.out.println(text);
         System.out.println(number2);
         System.out.println(number3);
         System.out.println(text2);
-       
-        
-        
-	
+
+
+
+
 	}
 }

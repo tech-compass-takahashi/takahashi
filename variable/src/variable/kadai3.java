@@ -11,7 +11,7 @@ public class kadai3 {
         System.out.println(intNum);
         System.out.println(doubleNum);
         System.out.println(longNum);
-        
+
         long a=intNum;
         float b=(float)doubleNum;
         double c=longNum;
@@ -19,7 +19,7 @@ public class kadai3 {
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
-        		
+
 	}
 
 }

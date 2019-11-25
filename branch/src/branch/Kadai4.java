@@ -12,7 +12,7 @@ public class Kadai4 {
 		if(numA<=0||numB<=0){
 			System.out.println("正の整数を入力してください。");
 		}else if(numA%numB==0) {
-		System.out.println("numBはnumAの約数です。");
+			System.out.println("numBはnumAの約数です。");
 		}else if(numA%numB>=1){
 			System.out.println("numBはnumAの約数ではないです");
 		}

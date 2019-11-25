@@ -1,9 +1,10 @@
+package method;
 
-public class basic1 {
+public class Kadai4 {
 
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
-        System.out.printoln("")
+
 	}
 
 }
