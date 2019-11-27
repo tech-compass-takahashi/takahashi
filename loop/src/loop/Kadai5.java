@@ -6,7 +6,11 @@ public class Kadai5 {
 		// 九九表を作成
 		for(int num=1;num<=9;num++) {
 			for(int num2=1;num2<=9;num2++) {
-				System.out.printf("%2d",num*num2);
+				if(num*num2<10) {
+					System.out.print("  "+num*num2);
+				}else {
+					System.out.print(" "+num*num2);
+				}
 			}
 			System.out.println();
 		}
