@@ -11,14 +11,25 @@ public class Kadai3 {
 		 */
 			System.out.print("[");
 		    Random rand = new Random();
+		    int max=0;
+		   int min=0;
+
 		    for(int num2=0;num2<6;num2++) {
 		    	  int num = rand.nextInt(10);
 				    System.out.print(num);
 				    if(num2!=5) {
 				    	 System.out.print(",");
 				    }
+				    if(max<num) {
+				    	max=num;
+				    }
+				    if(max>num) {
+				    	min=num;
+				    }
 		    }
-		    System.out.print("]");
+		    System.out.println("]");
+		    System.out.println("最大値:"+max);
+		    System.out.println("最小値:"+min);
 	}
 
 }
