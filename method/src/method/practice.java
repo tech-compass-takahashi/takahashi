@@ -1,12 +1,16 @@
 package method;
 
-public class Kadai5 {
+public class practice {
 	/*ーーー配列にnullがない場合ーーー
 	 *false
 	 *ーーー配列にnullがある場合ーーー
 	 *true
 	 */
 	public static void main(String[] args) {
+
+		//String text1=new java.util.Scanner(System.in).nextLine();
+		//String text2=new java.util.Scanner(System.in).nextLine();
+
 		String[]array= {"text1","text2"};
 		boolean a=task5(array);
 

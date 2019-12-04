@@ -3,8 +3,7 @@ package method;
 public class Kadai1 {
 
 	public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-
+		// 課題1回答表示
+		System.out.println("回答："+"A."+"B");
 	}
-
 }
