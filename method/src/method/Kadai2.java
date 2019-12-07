@@ -8,21 +8,11 @@ public class Kadai2 {
 	 * よろしくお願いします。
 	 */
 	public static void main(String[] args) {
-		//引数
-		task2("コラボ");
-		int age=30;
-		task2(age);
-		double height=178.0;
-		task2(height);
+		task2("コラボ", 30, 178.0);
 	}
-	//メソッドの定義
-	public static void task2(String name) {
-		System.out.println("私の名前は"+name+"です。");
-	}
-	public static void task2(int age) {
-		System.out.println("年齢は"+age+"歳です。");
-	}
-	public static void task2(double height) {
-		System.out.println("身長は"+height+"㎝です。");
+	public static void task2(String name, int age, double height) {
+		System.out.println("私の名前は" + name + "です。");
+		System.out.println("年齢は" + age + "です。");
+		System.out.println("身長は" + height + "㎝です。");
 	}
 }

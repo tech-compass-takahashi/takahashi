@@ -7,22 +7,21 @@ public class Kadai5 {
 	 *true
 	 */
 	public static void main(String[] args) {
-		String[]array= {"text1","text2"};
-		boolean a=task5(array);
-
+		//配列にnullがない場合
+		String[]array = {"text1", "text2"};
 		System.out.println("ーーー配列にnullがない場合ーーー");
-        System.out.println(a);
+        System.out.println(task5(array));
 
-        String[]array1= {"text3",null};
-		boolean b=task5(array1);
+        //配列にnullがある場合
+        String[]array1 = {"text3", null};
         System.out.println("ーーー配列にnullがある場合ーーー");
-    	System.out.println(b);
+    	System.out.println(task5(array1));
 	}
 	public static boolean task5(String[] array) {
-		boolean a=false;
-		for(int i=0;i<array.length;i++) {
-			if(array[i]==null) {
-			a=true;
+		boolean a = false;
+		for(int i = 0;i < array.length;i ++ ) {
+			if(array[i] == null) {
+				a = true;
 			}
 		}
 		return a;
