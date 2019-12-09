@@ -14,7 +14,7 @@ public class Kadai4 {
 		System.out.println(overload("いつも","お疲れ様です"));
 		System.out.println("ーーー②整数のみの場合ーーーー");
 		System.out.println(overload(1, 2));
-		System.out.println("ーーー③少数の場合ーーー");
+		System.out.println("ーーー③小数の場合ーーー");
 		System.out.println(overload(1.0, 2.0));
 	}
 	//戻り値【引数より変化

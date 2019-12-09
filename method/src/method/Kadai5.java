@@ -19,7 +19,7 @@ public class Kadai5 {
 	}
 	public static boolean task5(String[] array) {
 		boolean a = false;
-		for(int i = 0;i < array.length;i ++ ) {
+		for(int i = 0; i < array.length; i++) {
 			if(array[i] == null) {
 				a = true;
 			}
