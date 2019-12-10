@@ -8,9 +8,8 @@ public class Kadai2 {
 		 *Java Programming
 		 */
 
-		String str = "Java Programming Training";
-		String str1 = str.substring(17);
-		String str2 = str.substring(0,15);
+		String str1 =  "Java Programming Training".substring(17);
+		String str2 =  "Java Programming Training".substring(0, 15);
 		System.out.println(str1);
 		System.out.println(str2);
 	}
