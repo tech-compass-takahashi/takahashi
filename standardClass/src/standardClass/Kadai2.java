@@ -9,7 +9,8 @@ public class Kadai2 {
 		 */
 
 		String str1 =  "Java Programming Training".substring(17);
-		String str2 =  "Java Programming Training".substring(0, 15);
+		String str2 =  "Java Programming Training".substring(0, 16);
+
 		System.out.println(str1);
 		System.out.println(str2);
 	}

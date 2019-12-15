@@ -15,21 +15,19 @@ public class Kadai7 {
 		Calendar cal1 = Calendar.getInstance();
 		Calendar cal2 = Calendar.getInstance();
 
-		System.out.print("現在日時:");
-		System.out.print(cal1.get(Calendar.YEAR) + "年");
-		System.out.print(cal1.get(Calendar.MONTH) + 1 + "月");
-		System.out.println(cal1.get(Calendar.DAY_OF_MONTH) + "日");
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy年MM月dd日");
+		System.out.println("現在日時:" + sdf1.format(cal1.getTime()));
 
 		cal1.add(Calendar.DAY_OF_MONTH, 7);
-		System.out.print("１週間後:");
-		System.out.print(cal1.get(Calendar.YEAR) + "年");
-		System.out.print(cal1.get(Calendar.MONTH) + 1 + "月");
-		System.out.println(cal1.get(Calendar.DAY_OF_MONTH) + "日");
+		Date d1 = cal1.getTime();
+		SimpleDateFormat sdf2 = new SimpleDateFormat("yyyy年MM月dd日");
+		String strTime1 = sdf2.format(d1);
+		System.out.println("１年後  :" + strTime1);
 
 		cal2.set(Calendar.YEAR, 2020);
-		Date d = cal2.getTime();
-		SimpleDateFormat f = new SimpleDateFormat("yyyy年MM月dd日(E)");
-		String s = f.format(d);
-		System.out.println("１年後  :" + s);
+		Date d2 = cal2.getTime();
+		SimpleDateFormat sdf3 = new SimpleDateFormat("yyyy年MM月dd日(E)");
+		String strTime2 = sdf3.format(d2);
+		System.out.println("１年後  :" + strTime2);
 	}
 }

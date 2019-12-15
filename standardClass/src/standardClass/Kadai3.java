@@ -8,14 +8,19 @@ public class Kadai3 {
 		 *GFEDCBA:  列字文
 		 */
 
-		String[] strArray = {"文", "字", "列", ": ",  "A", "B", "C", "D", "E", "F", "G"};
-		for(int i = 0; i < strArray.length; i++) {
-			System.out.print(strArray[i]);
+		String text = "ABCDEFG";
+
+		System.out.print("文字列: ");
+		for(int i = 0; i < text.length(); i++) {
+			char leadTxet = text.charAt(i);
+			System.out.print(leadTxet);
 		}
 
 		System.out.println();
-		for(int i = strArray.length-1; i >= 0; i--) {
-			System.out.print(strArray[i]);
+		for(int i = text.length()-1; i >= 0; i--) {
+			char endTxet = text.charAt(i);
+			System.out.print(endTxet);
 		}
+		System.out.println(": 列字文");
 	}
 }
