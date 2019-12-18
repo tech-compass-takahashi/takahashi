@@ -5,6 +5,7 @@ public class Kadai5 {
 	public static void main(String[] args) {
 		// catのほうが多い
 
+		String a;
 		int catCount = 0;
 		int mouseCount = 0;
 		String nameAnimal = "cat";
@@ -12,12 +13,8 @@ public class Kadai5 {
 
 		String arrAnimal[] = text.split("_");
 
-		for(String texAnimal:arrAnimal) {
-			if(nameAnimal.equals(texAnimal)) {
-				++catCount;
-			}else {
-				++mouseCount;
-			}
+		for(String textAnimal:arrAnimal) {
+			int animalCount = nameAnimal.equals(textAnimal) ? ++catCount : ++mouseCount;
 		}
 
 		if(catCount > mouseCount) {

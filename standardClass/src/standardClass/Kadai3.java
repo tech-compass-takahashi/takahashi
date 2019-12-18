@@ -10,11 +10,7 @@ public class Kadai3 {
 
 		String text = "ABCDEFG";
 
-		System.out.print("文字列: ");
-		for(int i = 0; i < text.length(); i++) {
-			char leadTxet = text.charAt(i);
-			System.out.print(leadTxet);
-		}
+		System.out.print("文字列: " + text);
 
 		System.out.println();
 		for(int i = text.length()-1; i >= 0; i--) {

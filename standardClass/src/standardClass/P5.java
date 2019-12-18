@@ -3,24 +3,47 @@ package standardClass;
 public class P5 {
 
 	public static void main(String[] args) {
-		String arrAnimal[] = "cat_mouse_mouse_cat_cat".split("_");
-		//前回
+		// catのほうが多い
+		String a;
 		int catCount = 0;
 		int mouseCount = 0;
+		String nameAnimal = "cat";
+		String text = "cat_mouse_mouse_cat_cat";
 
-		String nameAnimal1 = "cat";
-		for(String nameAnimal2 : arrAnimal) {
-			if(nameAnimal1.equals(nameAnimal2)) {
-				++catCount;
-			}else {
-				++mouseCount;
-			}
+		String arrAnimal[] = text.split("_");
+
+		for(String textAnimal:arrAnimal) {
+			int animalCount = nameAnimal.equals(textAnimal) ? ++catCount : ++mouseCount;
 		}
 
-		if(catCount>mouseCount) {
+		if(catCount > mouseCount) {
 			System.out.print("catのほうが多い");
 		}else {
 			System.out.print("mouseのほうが多い");
 		}
 	}
 }
+
+//catのほうが多い
+
+		//int catCount = 0;
+		//int mouseCount = 0;
+		//String nameAnimal = "cat";
+		//String text = "cat_mouse_mouse_cat_cat";
+
+		//String arrAnimal[] = text.split("_");
+
+		//for(String textAnimal:arrAnimal) {
+			//if(nameAnimal.equals(textAnimal)) {
+				//++catCount;
+			//}else {
+				//++mouseCount;
+			//}
+		//}
+
+		//if(catCount > mouseCount) {
+			//System.out.print("catのほうが多い");
+		//}else {
+			//System.out.print("mouseのほうが多い");
+		//}
+	//}
