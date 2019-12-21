@@ -19,18 +19,16 @@ public class Main {
 		//下記、課題５のコード内容
 		System.out.println();
 
-		Dog dogData = new Dog("ポチ情報");
-		System.out.println("名前：" + dogData.name);
-		System.out.println("年齢：" + dogData.age + "歳");
-		System.out.println("体重：" + dogData.weight + "㎏");
+		Dog dog = new Dog("ポチ",5,12.3);
+		System.out.println("名前：" + dog.name);
+		System.out.println("年齢：" + dog.age + "歳");
+		System.out.println("体重：" + dog.weight + "㎏");
 
-		Dog dogRun = new Dog("ポチ走った");
-		dogRun.run();
+		dog.run();
 
-		Animal animal = new Animal();
-		animal.sleep();
+		Animal animalMethod = new Animal();
+		animalMethod.sleep();
 
-		Dog dog = new Dog("ポチは眠った");
 		dog.sleep();
 	}
 }
