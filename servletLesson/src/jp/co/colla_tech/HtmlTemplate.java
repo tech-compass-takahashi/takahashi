@@ -9,11 +9,14 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/ServletKadai3")
-public class ServletKadai3 extends HttpServlet {
-
+@WebServlet("/HtmlTemplate")
+public class HtmlTemplate extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		String[]luckArray = {"大吉", "中吉", "小吉", "末吉", "凶", "大凶"};
+		int index = (int) (Math.random()*6);
+		String luck = luckArray[index];
+
 		response.setContentType("text/html; charset = UTF-8");
 		PrintWriter out = response.getWriter();
 
@@ -25,9 +28,13 @@ public class ServletKadai3 extends HttpServlet {
 		out.println("<title>Servlet Kadai</title>");
 		out.println("</head>");
 		out.println("<body>");
+		out.println("<p>↓占い結果↓</p>");
+		out.println("<h1>" + luck + "</h1>");
 
 		HtmlTemplate.footer(out);
 		out.println("</body>");
 		out.println("</html>");
 	}
+	private static void footer(PrintWriter out) {}
+	private static void header(PrintWriter out) {}
 }
