@@ -2,12 +2,9 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.util.Date, java.text.SimpleDateFormat" %>
 <%!
-  private String dateDate
-
-
-  () {
+  private String dateDate() {
+	Date date = new Date();
 	SimpleDateFormat stringToday = new SimpleDateFormat("yyyy年MM月dd日");
-    Date date = new Date();
     return stringToday.format(date);
   }
 %>
