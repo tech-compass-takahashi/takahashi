@@ -17,7 +17,7 @@ public class ServletKadai2 extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		Date date = new Date();
-		SimpleDateFormat stringToday = new SimpleDateFormat("yyyy年MM月dd日");
+		SimpleDateFormat stringToday = new SimpleDateFormat("yyyy/MM/dd");
 		String today = stringToday.format(date);
 
 		response.setContentType("text/html; charset = UTF-8");
