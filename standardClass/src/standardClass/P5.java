@@ -4,7 +4,6 @@ public class P5 {
 
 	public static void main(String[] args) {
 		// catのほうが多い
-		String a;
 		int catCount = 0;
 		int mouseCount = 0;
 		String nameAnimal = "cat";
