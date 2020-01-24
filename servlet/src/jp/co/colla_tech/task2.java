@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet("/ServletKadai2")
-public class ServletKadai2 extends HttpServlet {
+public class task2 extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -26,7 +26,7 @@ public class ServletKadai2 extends HttpServlet {
 		out.println("<html>");
 		out.println("<head>");
 		out.println("<meta charset = 'UTF-8'>");
-		out.println("<title>Servlet Task</title>");
+		out.println("<title>Servlet Kadai</title>");
 		out.println("</head>");
 		out.println("<body>");
 		out.println("<h1>今日の日付：" + today + "</h1>");
