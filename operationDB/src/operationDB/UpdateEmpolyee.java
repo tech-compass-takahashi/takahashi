@@ -45,8 +45,8 @@ public class UpdateEmpolyee extends HttpServlet {
 			String sql = "update employee set name = ? where id = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 
-			ps.setInt(1,Integer.parseInt(id));
-			ps.setString(2,name);
+			ps.setString(1,name);
+			ps.setInt(2,Integer.parseInt(id));
 
 			int num = ps.executeUpdate();
 
