@@ -149,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="ServletJSP_Sample" path="/ServletJSP_Sample" reloadable="false" source="org.eclipse.jst.jee.server:ServletJSP_Sample"/><Context docBase="Servlet_Jsp" path="/Servlet_Jsp" reloadable="false" source="org.eclipse.jst.jee.server:Servlet_Jsp"/><Context docBase="servletLesson" path="/servletLesson" reloadable="false" source="org.eclipse.jst.jee.server:servletLesson"/><Context docBase="dataOperation" path="/dataOperation" reloadable="false" source="org.eclipse.jst.jee.server:dataOperation"/></Host>
+      <Context docBase="ServletJSP_Sample" path="/ServletJSP_Sample" reloadable="false" source="org.eclipse.jst.jee.server:ServletJSP_Sample"/><Context docBase="Servlet_Jsp" path="/Servlet_Jsp" reloadable="false" source="org.eclipse.jst.jee.server:Servlet_Jsp"/><Context docBase="dataOperation" path="/dataOperation" reloadable="false" source="org.eclipse.jst.jee.server:dataOperation"/><Context docBase="operationDB" path="/operationDB" reloadable="false" source="org.eclipse.jst.jee.server:operationDB"/><Context docBase="servlet" path="/servlet" reloadable="false" source="org.eclipse.jst.jee.server:servlet"/></Host>
     </Engine>
   </Service>
 </Server>
