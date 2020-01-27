@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/task4")
+@WebServlet("/HtmlTemplate")
 public class task4 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -20,12 +20,12 @@ public class task4 extends HttpServlet {
 
 		//以下課題４追加部分
 		Random r = new Random();
-		String[]Result = {"大吉", "中吉", "小吉","末吉", "凶","大凶"};
-		String Answer = Result[r.nextInt(6)];
+		String[]result = {"大吉", "中吉", "小吉","末吉", "凶","大凶"};
+		String answer = result[r.nextInt(6)];
 		response.setContentType("text/html ; charset = UTF-8 ");
 		PrintWriter out = response.getWriter();
 		HtmlTemplate.header(out);
-		out.println("<h1>" + Answer + "</h1>");
+		out.println("<h1>" + answer + "</h1>");
 		HtmlTemplate.footer(out);
 	}
 }
