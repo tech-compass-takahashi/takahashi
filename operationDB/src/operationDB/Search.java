@@ -22,7 +22,7 @@ public class Search extends HttpServlet {
 			throws ServletException, IOException {
 
 		request.setCharacterEncoding("UTF-8");
-		String age = request.getParameter("age");
+		String name = request.getParameter("name");
 
 		response.setContentType("text/html; charset=UTF-8");
 		PrintWriter out = response.getWriter();
@@ -41,10 +41,10 @@ public class Search extends HttpServlet {
 
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/task1", "root", "");
 
-			String sql = "select * from employee where age >= ?";
+			String sql = "select * from employee where name = ?";
 			PreparedStatement ps = con.prepareStatement(sql);
 
-			ps.setInt(1,Integer.parseInt(age));
+			ps.setString(1,name);
 			System.out.println("検索結果");
 
 			ResultSet rs = ps.executeQuery();
